@@ -1,5 +1,5 @@
-#include "unity.h"
 #include "card.h"
+#include "unity.h"
 
 void setUp(void) {
     // set stuff up here
@@ -10,9 +10,9 @@ void tearDown(void) {
 }
 
 void test_function_should_doBlahAndBlah(void) {
-  TEST_ASSERT_TRUE(1);
-  TEST_ASSERT_FALSE(0);
     //test stuff
+  TEST_ASSERT(1);
+  TEST_ASSERT(2);
 }
 
 void test_function_should_doAlsoDoBlah(void) {
@@ -21,8 +21,10 @@ void test_function_should_doAlsoDoBlah(void) {
 
 // not needed when using generate_test_runner.rb
 int main(void) {
+
     UNITY_BEGIN();
     RUN_TEST(test_function_should_doBlahAndBlah);
     RUN_TEST(test_function_should_doAlsoDoBlah);
+    /* printf("asdasd %d", test()); */
     return UNITY_END();
 }
