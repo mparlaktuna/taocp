@@ -4,7 +4,10 @@ enum Tag
     FACE_UP
   };
 
-typedef struct
-{
-  Tag tag;
-} Card;
+/* typedef struct */
+/* { */
+/*   Tag tag; */
+/* } Card; */
+
+
+int test();
